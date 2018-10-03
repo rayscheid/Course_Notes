@@ -59,4 +59,26 @@ grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf |
 grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf |
   sed -E -n 's/.*transcript_id "([^"]+)".*/\1/p' | sort | uniq | head
 ```
-
+## 10/3/18
+```shell
+ray-scheids-macbook:chapter-07-unix-data-tools rayscheid$ bash headtail.sh Mus_musculus.GRCm38.75_chr1.bed 
+script name: headtail.sh
+first argument: Mus_musculus.GRCm38.75_chr1.bed
+number of arguments: 1
+1	3054233	3054733
+1	3054233	3054733
+1	195240910	195241007
+1	195240910	195241007
+ray-scheids-macbook:chapter-07-unix-data-tools rayscheid$ bash headtail.sh Mus_musculus.GRCm38.75_chr1.bed | column -t
+script  name:      headtail.sh
+first   argument:  Mus_musculus.GRCm38.75_chr1.bed
+number  of         arguments:                       1
+1       3054233    3054733
+1       3054233    3054733
+1       195240910  195241007
+1       195240910  195241007
+```
+-To change permissions
+```shell
+chmod u+x headtail.sh
+```

@@ -82,3 +82,15 @@ number  of         arguments:                       1
 ```shell
 chmod u+x headtail.sh
 ```
+## 10/8/18
+- 1 byte = 8 bits  
+- 1 nibble = 4 bits  
+- 0000 = 0  
+- 0001 = 1  
+- 0010 = 2  
+- ...  
+- 1111 = 15  
+- nibble 16 base  
+- 0 1 2 ... 8 9 a b c d e f  
+- 0000     1000         1111 (15)  
+- 

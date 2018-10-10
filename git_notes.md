@@ -93,4 +93,18 @@ chmod u+x headtail.sh
 - nibble 16 base  
 - 0 1 2 ... 8 9 a b c d e f  
 - 0000     1000         1111 (15)  
-- 
+
+## 10/10/18  
+```shell
+awk '/Lypla1/ { feature[$3] += 1 };
+    END { for (k in feature)
+    print k "\t" feature[k] }' Mus_musculus.GRCm38.75_chr1.gtf  | column -t
+  ```  
+- This is an array, feature is a variable  
+- feature[$3] += 1 (thrid column, "gene")  
+- feature[gene] = 1 (increment by 1)  
+- feature  
+  gene --> 1 (finds another gene --> 2)  
+  transcript --> 1  
+  exon --> 1  
+  gene, etc = keys, number = values  

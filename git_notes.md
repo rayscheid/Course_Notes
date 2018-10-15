@@ -108,3 +108,27 @@ awk '/Lypla1/ { feature[$3] += 1 };
   transcript --> 1  
   exon --> 1  
   gene, etc = keys, number = values  
+
+## 10/15/18
+- ssh - secure shell  
+- scp - secure cp  
+- **hostname** to determine where you are (machine using)
+```shell
+scp -p #preserve timestamp
+``` 
+```shell
+cp -r log/ target/path/
+```
+copies the content of the log/ directory
+```shell
+cp -r log target/path/ 
+``` 
+copies the directory itself and its content
+- **&** to put job in background
+```shell
+kill -9
+```
+To kill job
+### tmux: terminal multiplexer
+- GNU ```screen```
+- ```tmux``` sessions can be detached and reattached: detach, log out, log back in, re-attach

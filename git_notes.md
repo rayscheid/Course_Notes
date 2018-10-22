@@ -132,3 +132,5 @@ To kill job
 ### tmux: terminal multiplexer
 - GNU ```screen```
 - ```tmux``` sessions can be detached and reattached: detach, log out, log back in, re-attach
+## 10/17/18
+- 
